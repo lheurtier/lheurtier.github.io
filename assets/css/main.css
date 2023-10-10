@@ -2832,7 +2832,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #042b45a1;
+				background-color: #042b457f;
 				/*background-image: url("../../images/profile.jpg");
 				background-attachment: fixed;
 				background-position: center;
@@ -2841,24 +2841,24 @@ input, select, textarea {
 			*/}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #513e597a;
+				background-color: #513e594b;
 				
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d814e;
+				background-color: #ec8d813a;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b88870;
+				background-color: #e7b88845;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #8ea9e850;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+				background-color: #87c5a450;
 			}
 
 		@media screen and (max-width: 1280px) {
