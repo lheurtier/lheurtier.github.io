@@ -2792,14 +2792,14 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 1;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				background-color: rgba(36, 41, 67, 0.625);
 				content: '';
 				display: block;
 				height: 100%;
@@ -2808,10 +2808,11 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 1;
+				opacity: 0.2;
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.01;
 			}
 
 			.tiles article.is-transitioning {
@@ -2831,19 +2832,25 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
-			}
+				background-color: #042b45a1;
+				/*background-image: url("../../images/profile.jpg");
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			*/}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color: #513e597a;
+				
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #ec8d814e;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #e7b88870;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
@@ -3415,7 +3422,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
