@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <link href="images/favicon.png" rel="icon"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P58RYWBZ79"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P58RYWBZ79');
+    </script>
+
+    <title>Articles | Lucien Heurtier</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Articles and commentary by Lucien Heurtier on particle physics, cosmology, UK science policy and the research landscape."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Articles | Lucien Heurtier"/>
+    <meta property="og:description" content="Articles and commentary on particle physics, cosmology, UK science policy and the research landscape."/>
+    <meta property="og:url" content="https://lheurtier.github.io/articles.html"/>
+    <meta property="og:site_name" content="Lucien Heurtier | My Universe"/>
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Articles | Lucien Heurtier"/>
+    <meta name="twitter:description" content="Articles and commentary on particle physics, cosmology, UK science policy and the research landscape."/>
+
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <noscript><link href="assets/css/noscript.css" rel="stylesheet"/></noscript>
+
+    <style id="articles-page-styles">
+        .articles-page {
+            --article-accent: #9bf1ff;
+            --article-panel: rgba(255,255,255,0.055);
+            --article-line: rgba(255,255,255,0.16);
+            --article-muted: rgba(255,255,255,0.68);
+        }
+
+        #banner.articles-banner {
+            min-height: 22em;
+        }
+
+        #banner.articles-banner .inner {
+            padding-bottom: 3em;
+        }
+
+        #banner.articles-banner p {
+            max-width: 52em;
+        }
+
+        .articles-intro {
+            max-width: 54em;
+            font-size: 1.08em;
+            line-height: 1.75;
+            margin-bottom: 2.5em;
+        }
+
+        .article-feed {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1.6em;
+            margin: 0 0 3em 0;
+        }
+
+        .article-card {
+            display: grid;
+            grid-template-columns: minmax(240px, 36%) minmax(0, 1fr);
+            min-height: 17em;
+            background: var(--article-panel);
+            border: 1px solid var(--article-line);
+            overflow: hidden;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(155,241,255,0.45);
+            background: rgba(255,255,255,0.075);
+        }
+
+        .article-card .thumb {
+            position: relative;
+            min-height: 100%;
+            overflow: hidden;
+            background: #242943;
+        }
+
+        .article-card .thumb img {
+            width: 100%;
+            height: 100%;
+            min-height: 17em;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+
+        .article-card:hover .thumb img {
+            transform: scale(1.025);
+        }
+
+        .article-card .thumb:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(36,41,67,0.05), rgba(36,41,67,0.24));
+            pointer-events: none;
+        }
+
+        .article-card .copy {
+            padding: 1.8em 2em 1.55em 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .55em 1em;
+            margin-bottom: .75em;
+            color: var(--article-muted);
+            font-size: .78em;
+            font-weight: 700;
+            letter-spacing: .11em;
+            text-transform: uppercase;
+        }
+
+        .article-meta .category {
+            color: var(--article-accent);
+        }
+
+        .article-card h2 {
+            font-size: 1.65em;
+            line-height: 1.25;
+            margin-bottom: .55em;
+        }
+
+        .article-card h2 a {
+            border-bottom: 0;
+        }
+
+        .article-card p {
+            line-height: 1.65;
+            margin-bottom: 1.2em;
+        }
+
+        .article-card .actions {
+            margin: auto 0 0 0;
+        }
+
+        .resource-card {
+            border-left: 4px solid rgba(155,241,255,0.65);
+        }
+
+        .articles-note {
+            border-top: 1px solid var(--article-line);
+            padding-top: 1.5em;
+            color: var(--article-muted);
+            font-size: .95em;
+        }
+
+        @media screen and (max-width: 980px) {
+            .article-card {
+                grid-template-columns: minmax(190px, 34%) minmax(0, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            #banner.articles-banner {
+                min-height: 18em;
+            }
+
+            .article-card {
+                grid-template-columns: 1fr;
+            }
+
+            .article-card .thumb,
+            .article-card .thumb img {
+                min-height: 13em;
+                height: 13em;
+            }
+
+            .article-card .copy {
+                padding: 1.45em 1.35em 1.3em 1.35em;
+            }
+
+            .article-card h2 {
+                font-size: 1.35em;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+<div id="wrapper">
+
+    <header id="header" class="alt">
+        <a href="index.html" class="logo"><strong>Lucien Heurtier</strong> <span>King's College London</span></a>
+        <nav><a href="#menu">Menu</a></nav>
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="landing.html">About Me</a></li>
+            <li><a href="generic.html">My Research</a></li>
+            <li><a href="elements.html">My Collaborators</a></li>
+            <li><a href="outreach.html">Outreach</a></li>
+            <li><a href="articles.html">Articles</a></li>
+        </ul>
+    </nav>
+
+    <section id="banner" class="style2 articles-banner">
+        <div class="inner">
+            <header class="major">
+                <h1>Articles</h1>
+            </header>
+            <div class="content">
+                <p>Physics, science policy, and the research landscape — longer-form pieces, analysis, and resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="main">
+        <section id="one">
+            <div class="inner articles-page">
+
+                <p class="articles-intro">
+                    A collection of articles and commentary on particle physics, UK science policy, research funding and related issues. New pieces will be added here as they are published.
+                </p>
+
+                <div class="article-feed">
+
+                    <article class="article-card">
+                        <a class="thumb" href="LHCbUpgrade.html" aria-label="Read Why the LHCb Upgrade Cuts Matter">
+                            <img src="images/lhcb-banner.png" alt="LHCb detector and particle tracks"/>
+                        </a>
+                        <div class="copy">
+                            <div class="article-meta">
+                                <span class="category">Particle physics · Science policy</span>
+                                <time datetime="2026-08-17">17 August 2026</time>
+                            </div>
+                            <h2><a href="LHCbUpgrade.html">Why the LHCb Upgrade Cuts Matter</a></h2>
+                            <p>UKRI and STFC have cut funding for the next-generation LHCb upgrade at CERN. What is at stake for UK science, international credibility, skills, detector expertise and the future of particle physics?</p>
+                            <ul class="actions">
+                                <li><a href="LHCbUpgrade.html" class="button next">Read article</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <a class="thumb" href="STFCprioritisation.html" aria-label="Read The STFC Prioritisation Outcome">
+                            <img src="images/cuts.png" alt="Illustration accompanying an article on UK science funding"/>
+                        </a>
+                        <div class="copy">
+                            <div class="article-meta">
+                                <span class="category">Science policy · Funding</span>
+                                <time datetime="2026-07-15">15 July 2026</time>
+                            </div>
+                            <h2><a href="STFCprioritisation.html">The STFC Prioritisation Outcome: What the Numbers Really Mean</a></h2>
+                            <p>A closer look at the 2026 STFC prioritisation outcome, the baseline behind UKRI's 2.7% PPAN headline, and what inflation-adjusted comparisons say about the contraction in research capacity.</p>
+                            <ul class="actions">
+                                <li><a href="STFCprioritisation.html" class="button next">Read article</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <a class="thumb" href="STFCcuts.html" aria-label="Read Cuts, Commitments, and Contradictions">
+                            <img src="images/cuts.png" alt="Illustration accompanying an article on UK PPAN science funding"/>
+                        </a>
+                        <div class="copy">
+                            <div class="article-meta">
+                                <span class="category">Science policy · PPAN</span>
+                                <time datetime="2026-03-07">7 March 2026</time>
+                            </div>
+                            <h2><a href="STFCcuts.html">Cuts, Commitments, and Contradictions</a></h2>
+                            <p>Inside a pivotal week for UK particle physics, astronomy and nuclear science, as ministers, Parliament, UKRI and STFC confronted the growing PPAN funding crisis.</p>
+                            <ul class="actions">
+                                <li><a href="STFCcuts.html" class="button next">Read article</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="article-card resource-card">
+                        <a class="thumb" href="MPletter.html" aria-label="Open the MP letter resource">
+                            <img src="images/cuts.png" alt="Illustration accompanying the PPAN MP letter resource"/>
+                        </a>
+                        <div class="copy">
+                            <div class="article-meta">
+                                <span class="category">Resource · Science policy</span>
+                            </div>
+                            <h2><a href="MPletter.html">Write to Your MP About PPAN Science Cuts</a></h2>
+                            <p>A practical template and guidance for contacting your local MP about the current PPAN funding crisis, including points that can be adapted to your own situation.</p>
+                            <ul class="actions">
+                                <li><a href="MPletter.html" class="button next">Open resource</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="articles-note">Articles are presented newest-first. Resources without a clear publication date are listed separately in the same feed.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact">
+<div class="inner">
+<section>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScrnifJ3p35PLb8VC5demy77qdglWfpRpGIPC-baV__YKGETg/formResponse?" enctype="text/plain" id="gform" name="gform">
+<div class="fields">
+<div class="field half">
+<label for="name">Name</label>
+<input id="entry.2136552359" name="entry.2136552359" type="text"/>
+</div>
+<div class="field half">
+<label for="email">Email</label>
+<input id="entry.1726412237" name="entry.1726412237" type="text"/>
+</div>
+<div class="field">
+<label for="message">Message</label>
+<textarea id="entry.2113204816" name="entry.2113204816" rows="6"></textarea>
+</div>
+</div>
+<ul class="actions">
+<li><input class="primary" type="submit" value="Send Message"/></li>
+<li><input type="reset" value="Clear"/></li>
+</ul>
+</form>
+</section>
+<section class="split">
+<section>
+<div class="contact-method">
+<span class="icon solid alt fa-envelope"></span>
+<h3>Email</h3>
+<a href="mailto: lucien.heurtier@kcl.ac.uk">lucien [dot] heurtier [at] kcl.ac.uk</a>
+</div>
+</section>
+<!--
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								-->
+<section>
+<div class="contact-method">
+<span class="icon solid alt fa-home"></span>
+<h3>Address</h3>
+<span>Theoretical Particle Physics &amp; Cosmology (TPPC) Group<br/>
+										
+
+										Department of Physics <br/>
+										
+										King’s College London <br/>
+										
+										Office S7.33 | Strand Building | Strand | London | WC2R 2LS <br/>
+										United Kingdom</span>
+</div>
+</section>
+</section>
+</div>
+</section>
+    <footer id="footer">
+<div class="inner">
+<ul class="icons">
+<li><a class="icon brands alt fa-twitter" href="https://twitter.com/LucienHeurtier"><span class="label">Twitter</span></a></li>
+<li><a class="icon brands alt fa-github" href="https://github.com/yfperezg/frisbhee"><span class="label">GitHub</span></a></li>
+<li><a class="icon brands alt fa-linkedin-in" href="https://www.linkedin.com/in/dr-lucien-heurtier-32a74271"><span class="label">LinkedIn</span></a></li>
+</ul>
+<ul class="copyright">
+<li>© Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+			$('#gform').on('submit', function(e) {
+			$('#gform *').fadeOut(2000);
+			$('#gform').prepend('Your submission has been processed...');
+			});
+			</script>
+</body>
+</html>
